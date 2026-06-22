@@ -3,13 +3,12 @@
 :root{
     --branco: rgb(250, 240, 240);
     --cor-de-fundo: #400E00;
-    --fundo-senha: #400E00;
+    --fundo-senha: #001E40;
     --fundo-texto: #001E40;
-    --borda: #400E00;
+    --borda: #d4cdca;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
-
 *{
     font-weight: 400;
 }
@@ -59,6 +58,10 @@ body{
     margin: 0 auto;
 }
 
+.parametro-senha-botoes{
+    display: flex;
+    justify-content: center;
+}
 .parametro{
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
@@ -85,6 +88,22 @@ body{
     margin: 0 auto;
 }
 
+.parametro-senha__botao{
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.parametro-senha__texto{
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
+}
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
